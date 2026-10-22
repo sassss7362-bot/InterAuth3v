@@ -1,0 +1,22 @@
+name: InterAuth
+version: 1.1.0
+main: dev.intertime.auth.InterAuth
+api-version: "1.21"
+description: Simple /reg and /l auth with auth room and spawn
+commands:
+  reg:
+    description: Register an account
+    usage: /reg <password> <password>
+  l:
+    description: Log in
+    usage: /l <password>
+  cp:
+    description: Change your password
+    usage: /cp <old> <new>
+  authset:
+    description: Set auth room or spawn location
+    usage: /authset <auth|spawn>
+    permission: interauth.admin
+permissions:
+  interauth.admin:
+    default: op
